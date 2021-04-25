@@ -8,5 +8,10 @@ body {
     direction: rtl;
     font-family: 'Vazir', sans-serif;
 }
+.rial {
+    font-size: 12px;
+    margin-right: 4px;
+}
 
 @import './header.css';
+@import './product-card.css';

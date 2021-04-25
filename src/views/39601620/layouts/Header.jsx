@@ -10,6 +10,10 @@ export default function Header({ count = 0 , data }){
                     </h3>
                     <ul className="cart-content">
                         <li>هنوز محصولی اضافه نشده است</li>
+                        <li className="cart-content__sum" >
+                            <p>جمع کل</p>
+                            <span>145000<label className="rial">ریال</label></span>
+                        </li>
                     </ul>
                 </div>
             </div>

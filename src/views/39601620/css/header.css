@@ -46,3 +46,13 @@ header .container h3 {
 .cart:hover > .cart-content {
     display: block;
 }
+
+.cart-content__sum {
+    width: 100%;
+    display: flex;
+    font-weight: 700;
+    line-height: 44px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #303F9F;
+}
