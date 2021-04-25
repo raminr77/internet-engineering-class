@@ -1,4 +1,4 @@
-import Rial from "../rial/Rial";
+import Rial from "../Rial/Rial";
 export default function ProductCard({ data }) {
 	return (
 		<div className="product-card">

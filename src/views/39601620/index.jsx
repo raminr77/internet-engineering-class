@@ -1,6 +1,6 @@
 import './css/main.css'
 import Header from './layouts/Header'
-import ProductCard from './components/productCard/ProductCard'
+import ProductCard from './components/ProductCard/ProductCard'
 import { useState , useEffect } from 'react'
 
 export default function Home() {
