@@ -74,12 +74,12 @@
     cursor: pointer;
     font-size: 16px;
     margin-top: 6px;
-    line-height: 36px;
+    line-height: 40px;
     border-radius: 8px;
-    background-color: #f03;
+    background-color: #1E88E5;
     transition-duration: 300ms;
 }
 
 .add-to-cart .add-btn:hover {
-    background-color: #e9002f;
+    background-color: #1976D2;
 }
