@@ -1,3 +1,4 @@
+import Rial from "../rial/Rial";
 export default function ProductCard({ data }) {
 	return (
 		<div className="product-card">
@@ -8,7 +9,7 @@ export default function ProductCard({ data }) {
 				{data.discount === 0 ? (
 					<p className="price">
 						{data.price}
-						<label className="rial">ریال</label>
+						<Rial />
 					</p>
 				) : (
 					<div className="price-box__discount">
@@ -16,7 +17,7 @@ export default function ProductCard({ data }) {
 							<del>{data.price}</del>
 							<p className="price">
 								{data.discount}
-								<label className="rial">ریال</label>
+								<Rial />
 							</p>
 						</div>
 						<span>
@@ -29,6 +30,10 @@ export default function ProductCard({ data }) {
 						</span>
 					</div>
 				)}
+			</div>
+
+			<div className="add-to-cart">
+				<button className="add-btn">اضافه به سبد</button>
 			</div>
 		</div>
 	);
