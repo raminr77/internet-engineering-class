@@ -1,0 +1,18 @@
+
+
+
+
+.header {
+    height: 7vh;
+    background-color: #7b68ee;
+    display: flex;
+    justify-content: space-between;
+}
+.header_item {
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+.header_item:hover {
+    background-color:#705ce3b9;
+}
