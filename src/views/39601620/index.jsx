@@ -23,8 +23,7 @@ export default function Home() {
 
     return (
         <div>
-            <Header count={3} />
-
+            <Header count={0} />
             <div className="products">
                 { products.map((product , index) => (
                     <ProductCard key={index} data={product} />

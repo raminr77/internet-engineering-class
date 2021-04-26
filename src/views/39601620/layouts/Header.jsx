@@ -1,4 +1,6 @@
 import Rial from '../components/Rial/Rial'
+import { intCommas, convertToFaDigit } from "../functions/functions";
+
 export default function Header({ count = 0, data }) {
 	return (
 		<header>
@@ -7,14 +9,14 @@ export default function Header({ count = 0, data }) {
 				<div className="cart">
 					<h3>
 						سبد شما
-						<span>{count}</span>
+						<span>{convertToFaDigit(count)}</span>
 					</h3>
 					<ul className="cart-content">
 						<li className="cart-content__empty">هنوز محصولی اضافه نشده است</li>
 						<li className="cart-content__sum">
 							<p>جمع کل</p>
 							<span>
-								0
+								{intCommas(0)}
                                 <Rial />
 							</span>
 						</li>
