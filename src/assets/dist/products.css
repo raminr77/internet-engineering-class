@@ -45,7 +45,15 @@
     height: 50px;
     border-radius: 0 0 10px 10px;
     cursor:pointer;
+    outline: none;
 }
 .addToList_button:hover {
     background-color: #0808c7;
+}
+.disabled:hover {
+    background-color: gray;
+}
+.disabled {
+    background-color: gray;
+    border:none;
 }
