@@ -1,16 +1,16 @@
 
 
 
-export const Header = () => {
-    const headerItems = ['item1','item2','item3','item4']
+export const Header = ({counter}) => {
     return (
         <div>
             <div className="header">
-                {headerItems.map((item,index)=> (
-                    <div key={index} className="header_item">
-                        {item}
-                    </div>
-                ))}
+                <div className="header_item"> 
+                   مجتبی متولی 
+                </div>
+                <div className="header_item">
+                    سبد شما: <span> {counter ? counter:0} </span>
+                </div>
             </div>
         </div>
     );
