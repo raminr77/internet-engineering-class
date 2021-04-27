@@ -51,9 +51,9 @@
     background-color: #0808c7;
 }
 .disabled:hover {
-    background-color: gray;
+    background-color: #22dd95;
 }
 .disabled {
-    background-color: gray;
+    background-color: #72dab2;
     border:none;
 }
