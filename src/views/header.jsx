@@ -31,7 +31,6 @@ export const Header = ({products,addedProducts}) => {
     for(const id of  addedProducts){
         totalPrice += products.get(id).price;
     } 
-    console.log(totalPrice);
     return (
             <div className="header">
                 <div className="header_item"> 
