@@ -11,8 +11,44 @@
 .header_item {
     color: white;
     padding: 20px;
-    cursor: pointer;
 }
 .header_item:hover {
     background-color:#202a2b;
+}
+
+.popover_container {
+    position: relative;
+}
+.popover_container:hover > ._popover_ {
+    display: block;
+}
+
+._popover_ {
+    display: none;
+    position:absolute;
+    max-height: 40vh;
+    left: 70px;
+    width: 25vh;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.2);
+    background-color: white;
+    border-radius: 15px;
+    overflow-y: scroll;
+}
+._popover_ .item {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+._popover_ .item  p {
+    font-size: 14px;
+}
+.header_continue {
+    background-color: red;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border:none;
+    cursor: pointer;
 }

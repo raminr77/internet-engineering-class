@@ -6,7 +6,7 @@ import { Products } from './products';
 
 export const Home = () => {
 
-    const [products,setProducts] = useState([]);
+    const [products,setProducts] = useState( new Map() );
     const [isLoading,setIsLoading] = useState(false);
     const [addedProds,setAddedProds] = useState([]);
     useEffect(()=> {
@@ -23,7 +23,7 @@ export const Home = () => {
 
     return (
         <div>
-            <Header/>
+            <Header products={products} addedProducts={addedProds} />
             {!isLoading ? <Products addedProduct={addedProds} addProduct={setAddedProds} products={products} /> : <div >لطفا صبر کنید   </div> }
         </div>
     );

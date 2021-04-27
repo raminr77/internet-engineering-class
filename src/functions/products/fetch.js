@@ -7,9 +7,12 @@ export const fetchData = async (mounted,signalController,setProducts,setIsLoadin
         const response  = await fetch(`${SERVER_URL}/products`,{method:'GET',signal:signalController});
         if(response.status === 200){
             const data = await response.json();
-            console.log(data.data);
             if(mounted){
-                setProducts(data.data);
+                const prodMap = new Map();
+                for (const prod of data.data){
+                    prodMap.set(prod.id,prod);
+                }
+                setProducts(prodMap);
                 setIsLoading(false);
             }
         }else {
