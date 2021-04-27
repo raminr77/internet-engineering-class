@@ -4,7 +4,7 @@
 
 .header {
     height: 7vh;
-    background-color: #7b68ee;
+    background-color: #304546;
     display: flex;
     justify-content: space-between;
 }
@@ -14,5 +14,5 @@
     cursor: pointer;
 }
 .header_item:hover {
-    background-color:#705ce3b9;
+    background-color:#202a2b;
 }
