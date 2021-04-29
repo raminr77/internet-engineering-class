@@ -11,6 +11,7 @@
 .header_item {
     color: white;
     padding: 20px;
+    align-self: center;
 }
 .header_item:hover {
     background-color:#202a2b;
