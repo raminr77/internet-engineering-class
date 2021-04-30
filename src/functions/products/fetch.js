@@ -1,12 +1,13 @@
+import axios from "axios";
 import { SERVER_URL } from "../../constants";
 
 
-export const fetchData = async (mounted,signalController,setProducts,setIsLoading) => {
+export const fetchData = async (mounted,cancelToken,setProducts,setIsLoading) => {
     mounted && setIsLoading(true);
     try {
-        const response  = await fetch(`${SERVER_URL}/products`,{method:'GET',signal:signalController});
+        const response  = await axios.get(`${SERVER_URL}/products`,{signal:cancelToken.token});
         if(response.status === 200){
-            const data = await response.json();
+            const data = response.data;
             if(mounted){
                 const prodMap = new Map();
                 for (const prod of data.data){

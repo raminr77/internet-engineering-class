@@ -3,6 +3,7 @@ import {Header} from './header';
 import { useEffect,useState } from "react";
 import {fetchData} from '../functions/products';
 import { Products } from './products';
+import axios from 'axios';
 
 export const Home = () => {
 
@@ -11,13 +12,12 @@ export const Home = () => {
     const [addedProds,setAddedProds] = useState([]);
     useEffect(()=> {
         let mounted = true;
-        const sig = new AbortController();
-        fetchData(mounted,sig.signal,setProducts,setIsLoading);
+        const cancelToken = axios.CancelToken.source();
+        fetchData(mounted,cancelToken,setProducts,setIsLoading);
         return () => {
             mounted = false;
-            if(!sig.signal.aborted){
-                sig.abort();
-            }
+            // cancel request if page unmounts before fetch is complete
+            cancelToken.cancel();
         }
     },[]);
 
