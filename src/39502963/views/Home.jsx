@@ -4,8 +4,9 @@ import { useEffect,useState } from "react";
 import {fetchData} from '../functions/products';
 import { Products } from './products';
 import axios from 'axios';
+import '../assets/main.css';    
 
-export const Home = () => {
+export const MojtabaMotevali39502963 = () => {
 
     const [products,setProducts] = useState( new Map() );
     const [isLoading,setIsLoading] = useState(false);
