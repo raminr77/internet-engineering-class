@@ -4,8 +4,8 @@ import {convertNumber} from '../functions/common';
 
 export const ProductCard = ({id,title,image,price,discount,addProduct,isAdded}) => (
 
-    <div  className="product_card">
-        <img  src={image} />
+    <div key={id} className="product_card">
+        <img  alt="تصویر پیدا نشد" src={image} />
         <div style={{paddingRight:'10px',paddingLeft:'10px'}}>
             <p> {title} </p>
             { (discount > 0) && (parseInt((discount/price)*100) > 0) &&  <div style={{justifyContent:'space-between',alignItems: 'center',display:'flex'}}>
