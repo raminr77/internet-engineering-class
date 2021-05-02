@@ -3,10 +3,10 @@ function intCommas(number) {
 }
 
 function convertToFaDigit(number) {
-	var b = '' + number;
-	for (var c = 48; c <= 57; c++) {
-		var d = String.fromCharCode(c);
-		var e = String.fromCharCode(c + 1728);
+	let b = '' + number;
+	for (let c = 48; c <= 57; c++) {
+		let d = String.fromCharCode(c);
+		let e = String.fromCharCode(c + 1728);
 		b = b.replace(new RegExp(d.toString(), "g"), e.toString())
 	}
 	return b;
