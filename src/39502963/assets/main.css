@@ -1,0 +1,20 @@
+/* https://fontserver.ir/font/Shabnam  */
+@import url('https://v1.fontapi.ir/css/Shabnam'); 
+
+* {
+    box-sizing: border-box;
+}
+body {
+    direction: rtl;
+    font-family: 'Shabnam';
+    margin:0;
+    padding:0;
+}
+
+button {
+    font-family: 'Shabnam', sans-serif;
+}
+
+@import './dist/header.css';
+@import './dist/products.css';
+

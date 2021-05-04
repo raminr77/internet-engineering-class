@@ -1,0 +1,59 @@
+
+
+
+
+.header {
+    height: 7vh;
+    background-color: #304546;
+    display: flex;
+    justify-content: space-between;
+}
+.header_item {
+    color: white;
+    padding: 1.95vh;
+    align-self: center;
+}
+.header_item:hover {
+    background-color:#202a2b;
+}
+
+.popover_container {
+    position: relative;
+}
+.popover_container:hover > ._popover_ {
+    display: block;
+}
+
+._popover_ {
+    display: none;
+    position:absolute;
+    max-height: 40vh;
+    left: 70px;
+    width: 25vh;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.2);
+    background-color: white;
+    border-radius: 15px;
+    overflow-y: scroll;
+}
+._popover_ p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+._popover_ .item {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+._popover_ .item  p {
+    font-size: 12px;
+}
+.header_continue {
+    background-color: red;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: start;
+    padding-right: 20px ;
+    padding-left: 20px ;
+}
+
+.product_card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    width: 30vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product_card:hover {
+    box-shadow: 0 24px 32px 0 rgba(0,0,0,0.2);
+}
+
+
+.discount_price {
+    text-decoration-line:line-through;
+    color: red;
+    font-size: large;
+}
+.product_card img {
+    width:100%;
+    height:50%;
+}
+.discount_percent {
+    background-color: red;
+    color:white;
+    border-radius: 20px;
+    padding: 5px 12px;
+}
+.price {
+    font-weight: bold;
+}
+.addToList_button {
+    background-color: #0000ff;
+    color:white;
+    width: 100%;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+    cursor:pointer;
+    outline: none;
+}
+.addToList_button:hover {
+    background-color: #0808c7;
+}
+.disabled:hover {
+    background-color: #22dd95;
+}
+.disabled {
+    background-color: #72dab2;
+    border:none;
+}
