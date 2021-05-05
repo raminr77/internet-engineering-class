@@ -28,13 +28,15 @@ header .container{
 .cart_content{
     display: none;
     flex-wrap: wrap;
+    flex-direction :column;
+    align-items: center;
     position: absolute;
     left: 20px;
     padding: 16px;
     background-color: #eee;
     border-radius: 0 0 5px 5px;
     width: 90%;
-    max-width: 260px;
+    max-width: 480px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     color: #231;
     list-style: none;
@@ -59,13 +61,20 @@ header .container{
     border-top: 1px solid #231;
     display: flex;
     justify-content: space-between;
+    margin-top: 4px;
+
 }
 
 .cart_content__sum__p{
-    margin: 0 5px !important
+    margin: 0 5px !important;
 }
 
-
-
-
-
+.itemCart__container{
+    background-color: rgb(255, 221, 221);
+    margin: 3px 0;
+    padding: 0 5px;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
