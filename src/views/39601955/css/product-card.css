@@ -1,0 +1,84 @@
+.products{
+    user-select: none;
+    margin-top: 30px;
+    padding: 0 28px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 543px;
+    max-width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 4px;
+    margin: 8px;
+}
+
+.product-card:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.product-card h5 {
+    border-top: 1px solid rgba(0,0,0,0.2);
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 10PX ;
+    padding: 14PX;
+}
+
+.price-box del{
+    color: #f05;
+    font-size: 14px;
+    padding: 2px 14PX ;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 16px;
+    padding: 14PX;
+}
+
+.discount{
+    background-color: #f05;
+    color: #fff;
+    border-radius: 16px;
+    padding: 2px 8px;
+    font-size: 14px;
+    margin-left: 14px;
+}
+
+.price-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.btn-product{
+    width: 100%;
+    background-color: #f05;
+    color: #fff;
+    padding: 6px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 8px;
+    line-height: 36px;
+    transition: 300ms;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+.btn-product:hover{
+    background-color: rgb(230, 3, 79);
+}
