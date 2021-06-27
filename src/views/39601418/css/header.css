@@ -18,10 +18,22 @@ header .container{
 }
 
 
+.logged-user{
 
-header .container h3{   
-    font-weight: normal;
+    align-items: center;
+    display: flex; 
 }
+.logged-user h3{
+    font-weight: normal;
+    font-size: 14px;
+    margin-right:6px;
+    margin-left: 8px;
+
+}
+/* header .container h3{   
+    font-weight: normal;
+    font-size: 14px;
+} */
 
 
 .cart{
@@ -34,14 +46,15 @@ header .container h3{
     margin-right:4px;
     margin-left: 8px;
     align-items: center;
-    display: inline;
-    flex-direction: row;
+    /* display: inline; */
+    /* flex-direction: row; */
     display: flex;    
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .cart h3 p{
-    margin-right:4px ;
+    margin-right:6px ;
+    font-weight: normal;
 }
 
 .cart h3 span{
@@ -79,3 +92,14 @@ header .container h3{
     display: block;
 }
 
+
+
+.cart-content__sum{
+    width: 100%;
+    display: flex;
+    line-height: 44px;
+    font-weight: 700;
+    align-items:center;
+    justify-content: space-between;
+    border-top: 1px solid #212121;
+}

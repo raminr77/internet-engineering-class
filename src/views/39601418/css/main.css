@@ -10,4 +10,12 @@ body{
 
 }
 
-@import './header.css'
+.rial{
+  font-size: 12px;
+  margin-right: 4px;
+}
+
+
+
+@import './header.css';
+@import './product-card.css';
