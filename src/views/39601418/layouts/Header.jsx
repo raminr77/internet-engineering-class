@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaShoppingBasket } from 'react-icons/fa';
 import { FaUser } from "react-icons/fa";
+import Rial from '../components/rial/Rial'
+
 
 export default function Header({ count = 0, data }) {
     return (
@@ -22,7 +24,10 @@ export default function Header({ count = 0, data }) {
                         <li>سبد خرید خالی است </li>
                         <li className="cart-content__sum">
                             <p>جمع کل</p>
-                            <span>1450000 <label className="rial">ریال</label> </span>
+                            <span>
+                                1450000
+                                <Rial />
+                            </span>
                         </li>
                     </ul>
                 </div>
