@@ -22,12 +22,16 @@ header .container{
 
     align-items: center;
     display: flex; 
+    
 }
+
+
 .logged-user h3{
     font-weight: normal;
     font-size: 14px;
     margin-right:6px;
     margin-left: 8px;
+   
 
 }
 /* header .container h3{   

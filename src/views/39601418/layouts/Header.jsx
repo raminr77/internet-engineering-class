@@ -2,7 +2,7 @@ import React from 'react'
 import { FaShoppingBasket } from 'react-icons/fa';
 import { FaUser } from "react-icons/fa";
 import Rial from '../components/rial/Rial'
-
+import { intCommas } from '../functions/functions'
 
 export default function Header({ count = 0, data }) {
     return (
@@ -25,7 +25,7 @@ export default function Header({ count = 0, data }) {
                         <li className="cart-content__sum">
                             <p>جمع کل</p>
                             <span>
-                                1450000
+                                {intCommas(1450000)}
                                 <Rial />
                             </span>
                         </li>
