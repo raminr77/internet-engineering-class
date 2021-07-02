@@ -1,0 +1,70 @@
+header {
+    background-color: #2C3E50;
+    width: 100%;
+    height: 42px;
+    color: #ffff;
+    font-family: 'Sahel', sans-serif;
+    user-select: none;
+}
+
+header .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    line-height: 42px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .container .Cart .title {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+header .container .Cart .counter_products {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.cart-content {
+    width: 70%;
+    max-width: 240px;
+    padding: 15px;
+    background-color: #ECF0F1;
+    display: none;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    border-radius: 0 0 5px 8px;
+    box-shadow: 0 7px 8px rgba(0, 0, 0, .1);
+    color: #333;
+    border: solid 1px #E74C3C;
+    border-top: none !important;
+    font-size: 14px;
+}
+
+.Cart {
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.Cart:hover {
+    background-color: #3c5975;
+    transition-duration: .2s;
+}
+
+.Cart:hover > .cart-content {
+    display: inline;
+    transition-duration: 3s;
+}
+
+.Cart:hover > .title {
+    color: #E74C3C;
+    transition-duration: .3s;
+}
+
+.cart-content .sticker {
+    color: #E74C3C;
+}
