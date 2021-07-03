@@ -84,7 +84,7 @@ span.price {
     height: 2px;
 }
 
-.add-to-cart button {
+.add-to-cart {
     width: 70%;
     height: 30px;
     border-radius: 5px;
@@ -96,7 +96,7 @@ span.price {
     transition-duration: .4s;
 }
 
-.add-to-cart button:hover {
+.add-to-cart:hover {
     width: 80%;
     cursor: pointer;
     background-color: #FA8072;
