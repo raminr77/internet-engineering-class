@@ -31,18 +31,19 @@ header .container .Cart .counter_products {
     width: 70%;
     max-width: 240px;
     padding: 15px;
-    background-color: #ECF0F1;
+    background-color: #fff;
     display: none;
     list-style: none;
     position: absolute;
     left: 0;
     text-align: center;
     border-radius: 0 0 5px 8px;
-    box-shadow: 0 7px 8px rgba(0, 0, 0, .1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     color: #333;
-    border: solid 1px #E74C3C;
+    border-left: solid 2px #e27165;
     border-top: none !important;
     font-size: 14px;
+    z-index: 1;
 }
 
 .Cart {
@@ -67,4 +68,16 @@ header .container .Cart .counter_products {
 
 .cart-content .sticker {
     color: #E74C3C;
+}
+.cart-content__sum{
+    width: 100%;
+    border-top: 1px solid #4b5766;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.totalAmount{
+    font-size: 11px;
+    font-weight: bold;
+    color: #203220;
 }
