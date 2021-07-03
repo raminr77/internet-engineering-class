@@ -14,13 +14,12 @@ export default function Header({count = 0, data}) {
                             <span className={'sticker'}>):</span>
                         </li>
                         <li className='cart-content__sum'>
-                           <p>جمع کل:</p>
-                            <span className= 'totalAmount'>1890000ریال</span>
+                            <p>جمع کل:</p>
+                            <span className='totalAmount'>0ریال</span>
                         </li>
                     </ul>
                 </div>
             </div>
         </header>
     )
-
 }

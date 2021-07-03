@@ -1,49 +1,49 @@
 header {
-    background-color: #2C3E50;
     width: 100%;
     height: 42px;
     color: #ffff;
-    font-family: 'Sahel', sans-serif;
     user-select: none;
+    background-color: #2C3E50;
 }
 
 header .container {
     width: 90%;
-    max-width: 1100px;
+    display: flex;
     margin: 0 auto;
     line-height: 42px;
-    display: flex;
-    justify-content: space-between;
+    max-width: 1100px;
     position: relative;
+    justify-content: space-between;
 }
 
 header .container .Cart .title {
-    font-weight: normal;
     font-size: 14px;
+    font-weight: normal;
+
 }
 
 header .container .Cart .counter_products {
-    margin-right: 8px;
     font-size: 16px;
+    margin-right: 8px;
 }
 
 .cart-content {
-    width: 70%;
-    max-width: 240px;
-    padding: 15px;
-    background-color: #fff;
-    display: none;
-    list-style: none;
-    position: absolute;
     left: 0;
-    text-align: center;
-    border-radius: 0 0 5px 8px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    color: #333;
-    border-left: solid 2px #e27165;
-    border-top: none !important;
-    font-size: 14px;
     z-index: 1;
+    width: 70%;
+    color: #333;
+    padding: 5px 15px;
+    display: none;
+    font-size: 14px;
+    list-style: none;
+    max-width: 240px;
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 0 0 5px 8px;
+    border-top: none !important;
+    border-left: solid 2px #e27165;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .Cart {
@@ -51,8 +51,8 @@ header .container .Cart .counter_products {
 }
 
 .Cart:hover {
-    background-color: #3c5975;
     transition-duration: .2s;
+    background-color: #3c5975;
 }
 
 .Cart:hover > .cart-content {
@@ -68,15 +68,17 @@ header .container .Cart .counter_products {
 .cart-content .sticker {
     color: #E74C3C;
 }
-.cart-content__sum{
+
+.cart-content__sum {
     width: 100%;
-    border-top: 1px solid #4b5766;
     display: flex;
     text-align: center;
+    border-top: 1px solid #4b5766;
     justify-content: space-between;
 }
-.totalAmount{
+
+.totalAmount {
+    color: #203220;
     font-size: 11px;
     font-weight: bold;
-    color: #203220;
 }
