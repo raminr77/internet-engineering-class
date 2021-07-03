@@ -1,0 +1,84 @@
+header {
+    width: 100%;
+    height: 42px;
+    color: #ffff;
+    user-select: none;
+    background-color: #2C3E50;
+}
+
+header .container {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    line-height: 42px;
+    max-width: 1100px;
+    position: relative;
+    justify-content: space-between;
+}
+
+header .container .Cart .title {
+    font-size: 14px;
+    font-weight: normal;
+
+}
+
+header .container .Cart .counter_products {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.cart-content {
+    left: 0;
+    z-index: 1;
+    width: 70%;
+    color: #333;
+    padding: 5px 15px;
+    display: none;
+    font-size: 14px;
+    list-style: none;
+    max-width: 240px;
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 0 0 5px 8px;
+    border-top: none !important;
+    border-left: solid 2px #e27165;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Cart {
+    padding: 0 5px;
+}
+
+.Cart:hover {
+    transition-duration: .2s;
+    background-color: #3c5975;
+}
+
+.Cart:hover > .cart-content {
+    display: inline;
+    transition-duration: 3s;
+}
+
+.Cart:hover > .title {
+    color: #E74C3C;
+    transition-duration: .3s;
+}
+
+.cart-content .sticker {
+    color: #E74C3C;
+}
+
+.cart-content__sum {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    border-top: 1px solid #4b5766;
+    justify-content: space-between;
+}
+
+.totalAmount {
+    color: #203220;
+    font-size: 11px;
+    font-weight: bold;
+}
