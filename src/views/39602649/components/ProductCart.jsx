@@ -21,7 +21,7 @@ export default function ProductCard({data}) {
                     )}
             </div>
 
-            <div className= 'add-to-cart'>افزودن به سبد خرید</div>
+            <div className='add-to-cart'>افزودن به سبد خرید</div>
         </div>
 
 
