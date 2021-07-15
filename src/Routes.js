@@ -5,9 +5,7 @@ export default function Routes() {
     return (
         <Router>
             <Switch>
-
                 <Route path="/39400988/" component={ArmanAzarnik}/>
-
             </Switch>
         </Router>
     )

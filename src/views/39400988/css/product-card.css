@@ -1,0 +1,18 @@
+.products{
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    padding: 0 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card{
+    border-radius: 8px;
+    background-color: aqua;
+    width:90%;
+    margin: 8px;
+    max-width: 240px;
+    padding: 16px;
+}
